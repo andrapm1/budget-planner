@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-display: 'Inter', sans-serif;
+  --breakpoint: -3xl: 1920px;
+  --color-primary: #4F46E5;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background-color: #eef2f5;
+    overflow-x: hidden;
+  }
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #000;
+  background-color: #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+
+.btn-login {
+  width: 100%;
+  background-color: #f97316;
+  color: #fff;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-login:hover {
+  background-color: #fdba74;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -1px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(226, 232, 240, 0.5);
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-weight: 500;
+  background-color: #f3f4f6;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #434446;
+  font-weight: 500;
+  background-color: #f87903f3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -1px rgba(15, 23, 42, 0.06);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.add-btn:hover {
+  background-color: #ea6f00;
+  box-shadow: 0 6px 10px -2px rgba(15, 23, 42, 0.2), 0 3px 6px -2px rgba(15, 23, 42, 0.1);
+}
